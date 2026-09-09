@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all">
-<title>Datenschutzerklärung – Pausepoint</title>
+<title>Impressum &amp; Datenschutzerklärung – Pausepoint</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -41,7 +41,7 @@
   header {
     border-bottom: 1px solid var(--line);
     padding-bottom: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   h1 {
     font-size: clamp(1.6rem, 5vw, 2.2rem);
@@ -50,23 +50,38 @@
     letter-spacing: -0.02em;
   }
   .sub { color: var(--ink-soft); margin: 0; }
+  nav.jump {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+    font-size: .95rem;
+  }
   h2 {
-    font-size: 1.15rem;
-    margin: 2.4rem 0 .6rem;
+    font-size: 1.35rem;
+    margin: 2.8rem 0 .8rem;
+    letter-spacing: -0.01em;
+    padding-top: .6rem;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; margin-top: 1rem; }
+  h3 {
+    font-size: 1.1rem;
+    margin: 1.8rem 0 .5rem;
     letter-spacing: -0.01em;
   }
   p, li { color: var(--ink); }
   ul { padding-left: 1.3rem; }
   li { margin: .3rem 0; }
   a { color: var(--accent); }
-  .provider {
+  .card {
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 10px;
     padding: 1rem 1.2rem;
-    margin: 1.5rem 0;
+    margin: 1.2rem 0;
   }
-  .provider p { margin: .2rem 0; }
+  .card p { margin: .2rem 0; }
   code {
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
     font-size: .9em;
@@ -82,27 +97,52 @@
     color: var(--ink-soft);
     font-size: .9rem;
   }
+  h2, h3 { scroll-margin-top: 1rem; }
 </style>
 </head>
 <body>
 <main>
   <header>
-    <h1>Datenschutzerklärung für Pausepoint</h1>
-    <p class="sub">Stand: 9. September 2026</p>
+    <h1>Impressum &amp; Datenschutzerklärung</h1>
+    <p class="sub">Pausepoint (Android-App, <code>com.derdenker.pausepoint</code>) · Stand: 9. September 2026</p>
   </header>
 
-  <!-- ====== BITTE ANPASSEN: Name des Anbieters ====== -->
-  <div class="provider">
-    <p><strong>Anbieter / verantwortlich für die Datenverarbeitung:</strong></p>
-    <p>[Dein Name bzw. Entwicklername]</p>
+  <nav class="jump">
+    <a href="#impressum">Impressum</a>
+    <a href="#datenschutz">Datenschutzerklärung</a>
+  </nav>
+
+  <h2 id="impressum">Impressum</h2>
+  <p>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):</p>
+  <div class="card">
+    <p>René Röder</p>
+    <p>Theodor-Heuss-Straße 1</p>
+    <p>67663 Kaiserslautern</p>
+    <p>Deutschland</p>
+    <p style="margin-top:.6rem">Telefon: <a href="tel:+491776802462">+49 177 6802462</a></p>
     <p>E-Mail: <a href="mailto:pausepoint.feedback@gmail.com">pausepoint.feedback@gmail.com</a></p>
   </div>
-  <!-- ================================================ -->
+  <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 Medienstaatsvertrag (MStV):
+  René Röder, Anschrift wie oben.</p>
 
-  <h2>1. Überblick</h2>
+  <h3>Streitbeilegung</h3>
+  <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung
+  (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr/</a>.
+  Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor
+  einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+  <h2 id="datenschutz">Datenschutzerklärung für Pausepoint</h2>
+
+  <div class="card">
+    <p><strong>Verantwortlich für die Datenverarbeitung:</strong></p>
+    <p>René Röder, Theodor-Heuss-Straße 1, 67663 Kaiserslautern</p>
+    <p>E-Mail: <a href="mailto:pausepoint.feedback@gmail.com">pausepoint.feedback@gmail.com</a></p>
+  </div>
+
+  <h3>1. Überblick</h3>
   <p>Pausepoint ist eine App, mit der du deine eigene Bildschirmzeit bewusst begrenzt. Die App verarbeitet alle Daten ausschließlich lokal auf deinem Gerät. Es gibt keinen Server, keine Nutzerkonten, keine Werbung, kein Tracking und keine Analyse-Dienste. Es werden keine personenbezogenen Daten an den Anbieter oder an Dritte übertragen. Die App fordert keine Internet-Berechtigung an.</p>
 
-  <h2>2. Welche Daten die App verarbeitet</h2>
+  <h3>2. Welche Daten die App verarbeitet</h3>
   <p>Ausschließlich auf dem Gerät gespeichert:</p>
   <ul>
     <li>die von dir ausgewählten Apps sowie deren Limits, Zeitpläne und Einstellungen;</li>
@@ -112,34 +152,34 @@
   </ul>
   <p>Diese Daten verlassen dein Gerät nicht.</p>
 
-  <h2>3. Nutzungszugriff (PACKAGE_USAGE_STATS)</h2>
+  <h3>3. Nutzungszugriff (PACKAGE_USAGE_STATS)</h3>
   <p>Die App benötigt den Nutzungszugriff, um zu erkennen, welche App im Vordergrund läuft, und um die Nutzungsdauer zu messen. Diese Auswertung findet vollständig auf dem Gerät statt. Es werden keine Nutzungsdaten übertragen.</p>
 
-  <h2>4. Anzeige über anderen Apps (SYSTEM_ALERT_WINDOW)</h2>
+  <h3>4. Anzeige über anderen Apps (SYSTEM_ALERT_WINDOW)</h3>
   <p>Wird verwendet, um das Pause-Overlay über anderen Apps darzustellen.</p>
 
-  <h2>5. Benachrichtigungszugriff (optional)</h2>
+  <h3>5. Benachrichtigungszugriff (optional)</h3>
   <p>Wenn du ihn erteilst, nutzt die App den Benachrichtigungszugriff ausschließlich, um die Medien-Wiedergabe der blockierten App während einer Pause zu pausieren. Inhalte von Benachrichtigungen werden nicht gelesen, gespeichert oder übertragen. Die Funktion ist optional und kann jederzeit in den Android-Einstellungen entzogen werden.</p>
 
-  <h2>6. Lokale Sicherungsdatei</h2>
+  <h3>6. Lokale Sicherungsdatei</h3>
   <p>Zusätzlich zum Android-Backup schreibt die App eine Datei nach <code>Downloads/PausepointBackup/state.json</code>. Sie enthält deine blockierten Apps, Limits, den Streak, die Aufbewahrungsdauer für Ziele und die Installations-Kennung. Sie dient dazu, deinen Fortschritt nach einer Neuinstallation wiederherzustellen. Die Datei liegt unverschlüsselt in deinem öffentlichen Downloads-Ordner und kann von dir und anderen Apps mit Dateizugriff gelesen und gelöscht werden. Sie enthält keine Passwörter, keine Kontodaten und keine Inhalte aus anderen Apps.</p>
 
-  <h2>7. Android-System-Backup</h2>
+  <h3>7. Android-System-Backup</h3>
   <p>Android sichert die Einstellungen und die Datenbank der App im Rahmen des Geräte-Backups in dein Google-Konto und überträgt sie auf ein neues Gerät. Dieser Vorgang wird von Android gesteuert, nicht von Pausepoint. Du kannst ihn in den Android-Einstellungen unter „Backup“ deaktivieren.</p>
 
-  <h2>8. Feedback-Funktion</h2>
-  <p>Wenn du über die App Feedback sendest, öffnet die App deine E-Mail-App mit einer vorausgefüllten Nachricht an <a href="mailto:pausepoint.feedback@gmail.com">pausepoint.feedback@gmail.com</a>. Die Nachricht wird erst gesendet, wenn du das in deiner E-Mail-App bestätigst. Sie enthält deinen Text, die App-Version und allgemeine Geräteangaben (z.&nbsp;B. Modell, Android-Version) sowie – nur wenn du sie einträgst – deine Kontakt-E-Mail. Eine Kopie wird lokal auf dem Gerät gespeichert. Diese E-Mails werden ausschließlich zur Bearbeitung deines Anliegens verwendet.</p>
+  <h3>8. Feedback-Funktion</h3>
+  <p>Wenn du über die App Feedback sendest, öffnet die App deine E-Mail-App mit einer vorausgefüllten Nachricht an <a href="mailto:pausepoint.feedback@gmail.com">pausepoint.feedback@gmail.com</a>. Die Nachricht wird erst gesendet, wenn du das in deiner E-Mail-App bestätigst. Sie enthält deinen Text, die App-Version und allgemeine Geräteangaben (z.&nbsp;B. Modell, Android-Version) sowie – nur wenn du sie einträgst – deine Kontakt-E-Mail. Eine Kopie wird lokal auf dem Gerät gespeichert. Diese E-Mails werden ausschließlich zur Bearbeitung deines Anliegens verwendet und danach gelöscht.</p>
 
-  <h2>9. Weitergabe an Dritte</h2>
+  <h3>9. Weitergabe an Dritte</h3>
   <p>Es findet keine Weitergabe statt. Die App bindet keine Werbe-, Analyse- oder Social-Media-SDKs ein und stellt selbst keine Netzwerkverbindungen her.</p>
 
-  <h2>10. Kinder</h2>
+  <h3>10. Kinder</h3>
   <p>Die App richtet sich an Erwachsene und ist nicht für Kinder bestimmt. Es werden wissentlich keine Daten von Kindern erhoben.</p>
 
-  <h2>11. Deine Rechte</h2>
-  <p>Da keine Daten beim Anbieter oder bei Dritten gespeichert werden, gibt es dort nichts zu berichtigen oder zu löschen. Alle lokal gespeicherten Daten kannst du löschen, indem du die App-Daten in den Android-Einstellungen löschst oder die App deinstallierst; lösche zusätzlich die Datei <code>Downloads/PausepointBackup/state.json</code>, falls vorhanden.</p>
+  <h3>11. Deine Rechte</h3>
+  <p>Dir stehen nach DSGVO die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch zu sowie ein Beschwerderecht bei einer Aufsichtsbehörde. Da keine Daten beim Anbieter oder bei Dritten gespeichert werden, gibt es dort nichts herauszugeben, zu berichtigen oder zu löschen. Alle lokal gespeicherten Daten kannst du löschen, indem du die App-Daten in den Android-Einstellungen löschst oder die App deinstallierst; lösche zusätzlich die Datei <code>Downloads/PausepointBackup/state.json</code>, falls vorhanden.</p>
 
-  <h2>12. Änderungen</h2>
+  <h3>12. Änderungen</h3>
   <p>Diese Datenschutzerklärung kann bei Funktionsänderungen angepasst werden. Die jeweils aktuelle Fassung ist unter dieser Adresse abrufbar.</p>
 
   <footer>
